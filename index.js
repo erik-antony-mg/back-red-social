@@ -14,7 +14,7 @@ const server = new ApolloServer({
 });
 
 mongoose
-    .connect(MONGODB, {
+    .connect(process.env.MONGODB, {
         useNewUrlParser: true
     })
     .then(() => {

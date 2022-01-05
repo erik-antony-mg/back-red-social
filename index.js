@@ -3,6 +3,10 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 
+
+//
+requiere('dotenv'.config({path:'.env'}));
+
 const pubsub =new pubsub();
 const typeDefs = require("./graphql/typeDefs");
 const resolvers = require("./graphql/resolvers");

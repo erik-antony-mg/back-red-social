@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build":"tsc -p . && ncp",
     "dev": "nodemon index.js"
   },
   "keywords": [],
